@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      background-color: black;
+      font-family: Arial, sans-serif;
+      padding-bottom: 60px; /* Footer yüksekliği kadar boşluk */
+    }
+
+    .navbar {
+      background-color: #000;
+      color: white;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 15px 40px;
+    }
+
+    .navbar img {
+      width: 60px;
+      height: 60px;
+    }
+
+    .menu {
+      display: flex;
+      gap: 40px;
+      margin-right: auto;
+      margin-left: 480px;
+    }
+
+    .menu a {
+      color: #ccc;
+      text-decoration: none;
+      font-size: 20px;
+      transition: color 0.3s ease, transform 0.3s ease;
+    }
+
+    .menu a:hover {
+      color: white;
+      transform: scale(1.2);
+    }
+
+     footer {
+      position: fixed;
+      bottom: 0;
+      width: 100%;
+      background-color: #000;
+      color: #ccc;
+      text-align: center;
+      padding: 10px 0;
+      font-family: Arial, sans-serif;
+      font-size: 16px;
+      border-top: 1px solid #333;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 10px 30px;
+    }
+
+    .footer-text {
+      flex: 1;
+      text-align: left;
+    }
+
+    .footer-icons {
+      display: flex;
+      gap: 20px;
+    }
+
+    .footer-icons a img {
+      width: 24px;
+      height: 24px;
+      filter: grayscale(100%);
+      transition: filter 0.3s;
+    }
+
+    .footer-icons a:hover img {
+      filter: grayscale(0%);
+    }
+</style>
+<body>
+    <footer>
+    <div class="footer-text">© 2025 Efw54 | Tüm Hakları Saklıdır.</div>
+    <div class="footer-icons">
+      <a href="https://www.instagram.com/efe.klyc54/" target="_blank">
+        <img src="https://cdn-icons-png.flaticon.com/512/2111/2111463.png" alt="Instagram">
+      </a>
+      <a href="https://discord.gg/hXBtQdYc" target="_blank">
+        <img src="https://cdn-icons-png.flaticon.com/512/2111/2111370.png" alt="Discord">
+      </a>
+      <a href="mailto:efw54social@gmail.com">
+        <img src="https://cdn-icons-png.flaticon.com/512/732/732200.png" alt="Mail">
+      </a>
+    </div>
+  </footer>
+
+  <div class="navbar">
+    <a href="/index.html"><img src="/image/pngwing,com-photoaidcom-cropped.png" alt="Logo"></a>
+    <div class="menu">
+      <a href="/hakkımda.html">Hakkımda</a>
+      <a href="/iletisim.html">İletişim</a>
+      <a href="/Projelerim.html">Projelerim</a>
+      <a href="/kullandık.html">Kullandıklarım</a>
+      <a href="/destekol.html">Destek Ol</a>
+    </div>
+  </div>
+</body>
+</html>

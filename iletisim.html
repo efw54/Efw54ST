@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>İletişim</title>
+   <style>
+    body{
+        font-family: Arial, sans-serif;
+    }
+    
+
+        .divv{
+            position: absolute;
+            top: 20%;
+            
+            left: 0%;
+
+           width: 300px;
+           height: 300px;
+           background-color: black;
+           background-position:center;
+           text-align: center;
+          
+        }
+       * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      background-color: black;
+      font-family: Arial, sans-serif;
+    }
+
+    .navbar {
+      background-color: #000;
+      color: white;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 15px 40px;
+    }
+
+    .navbar img {
+      width: 60px;
+      height: 60px;
+    }
+
+    .menu {
+      display: flex;
+      gap: 40px;
+      margin-right: auto;
+      margin-left: 480px;
+    }
+
+    .menu a {
+      color: #ccc;
+      text-decoration: none;
+      font-size: 20px;
+      transition: color 0.3s ease, transform 0.3s ease;
+    }
+
+    .menu a:hover {
+      color: white;
+      transform: scale(1.2);
+    }
+
+    .arka{
+        background-color: rgba(255, 255, 255, 0.3);
+        width: 500px;
+        height: 100px;
+        border-radius: 50px;
+        text-align: center;
+        font-size: 20px;
+        position: relative;
+        left: 215%;  
+
+    }
+
+    .yaz{
+      background-color: black;
+      width:  20%;
+      height: 2%; 
+      color: white;
+      position: absolute;
+      top: 61%;
+      left: 44%;
+      font-size: 10px;
+      transition: color 0.3s ease;
+
+
+    }
+    .sub{
+      background-color: rgba(255, 255, 255, 0.3);
+        width: 250px;
+        height: 50px;
+        border-radius: 50px;
+        text-align: center;
+        font-size: 20px;
+        position: relative;
+        left: 415%;  
+        top: -65%;
+    }
+  footer {
+      position: fixed;
+      bottom: 0;
+      width: 100%;
+      background-color: #000;
+      color: #ccc;
+      text-align: center;
+      padding: 10px 0;
+      font-family: Arial, sans-serif;
+      font-size: 16px;
+      border-top: 1px solid #333;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 10px 30px;
+    }
+
+    .footer-text {
+      flex: 1;
+      text-align: left;
+    }
+
+    .footer-icons {
+      display: flex;
+      gap: 20px;
+    }
+
+    .footer-icons a img {
+      width: 24px;
+      height: 24px;
+      filter: grayscale(100%);
+      transition: filter 0.3s;
+    }
+
+    .footer-icons a:hover img {
+      filter: grayscale(0%);
+    }
+
+    .iletisimad{
+      
+      width: 16%;
+      position: fixed;
+      display: flex;
+      bottom: 0;
+      padding: 10px 0;
+      height: 20%;
+      top: 38%;
+      left: 10%;
+      padding: 5px 10px;
+      border-radius: 20px;
+      background-color: rgba(255, 255, 255, 0.3);
+      color: black;
+      justify-content: space-between;
+      text-align: center;
+      box-shadow: 0 0 20px white;
+      
+    }
+   
+    
+
+    .mail{
+      border-radius: 20px;
+      
+      align-items: center;
+      color: black;
+      padding: 10px 0;
+      width: 250px;
+      bottom: 0;
+      right: 5.4%;
+      position: absolute;
+      top: 10%;
+      display: flex;
+      height: 30px;
+      text-align: right;
+      justify-content: space-between;
+      padding: 5px 10px;
+      
+    }
+
+    .insta{ /* bu dc ye çevirildi */
+      align-items: center;
+      border-radius: 20px;
+      padding: 10px 0;
+      color: black;
+      width: 250px;
+      right: 5.4%;
+      position: absolute;
+      top: 30%;
+      display: flex;
+      height: 30px;
+      padding: 5px 10px;
+      
+    }
+
+    .discord{/*bu da instaya*/
+      align-items: center;
+      color: black;
+      border-radius: 20px;
+      padding: 10px 0;
+      width: 250px;
+      display: flex;
+      right: 5.4%;
+      position: absolute;
+      top: 50%;
+      height: 30px;
+      padding: 5px 10px;
+      text-align: center;
+    }
+
+    .youtub{
+      align-items: center;
+      color: black;
+      width: 250px;
+      border-radius: 20px;
+      right: 5.4%;
+      display: flex;
+      position: absolute;
+      top: 70%;
+      height: 30px;
+      padding: 5px 10px;
+      text-align: center;
+    }
+
+    .resim{
+      width: 24px;
+      height: 24px;
+      
+      
+    }
+    .yazzz{
+      padding-left: 8%;
+    }
+
+    
+   
+    
+
+
+
+
+
+
+   </style>
+
+
+
+
+
+</head>
+
+
+
+<body>
+
+<div class="divv">
+   <input  class="arka " type="text" placeholder="Kullanıcı Adı veya İsim" > <br> <br>
+   <input class="arka" type="email" placeholder="E-Mail Adresi"> <br> <br>
+   <textarea class="arka" rows="5" cols="30" placeholder="Mesajınız"></textarea> 
+   <input class="sub" type="submit">
+   
+
+
+</div>
+
+
+
+   <div class="navbar">
+    <a href="/index.html"><img src="/image/pngwing,com-photoaidcom-cropped.png" alt="Logo"></a>
+    <div class="menu">
+      <a href="/hakkımda.html">Hakkımda</a>
+      <a href="/iletisim.html">İletişim</a>
+      <a href="/Projelerim.html">Projelerim</a>
+      <a href="/kullandık.html">Kullandıklarım</a>
+      <a href="/destekol.html">Destek Ol</a>
+    </div>
+  </div>
+
+  <div class="yaz">
+<h2>Mesaj yazarak iletişime geçebilirsiniz.</h2>
+
+  </div>
+
+  <footer>
+    <div class="footer-text">© 2025 Efw54 | Tüm Hakları Saklıdır.</div>
+    <div class="footer-icons">
+      <a href="https://www.instagram.com/efe.klyc54/" target="_blank">
+        <img src="https://cdn-icons-png.flaticon.com/512/2111/2111463.png" alt="Instagram">
+      </a>
+      <a href="https://discord.gg/hXBtQdYc" target="_blank">
+        <img src="https://cdn-icons-png.flaticon.com/512/2111/2111370.png" alt="Discord">
+      </a>
+      <a href="mailto:efw54social@gmail.com">
+        <img src="https://cdn-icons-png.flaticon.com/512/732/732200.png" alt="Mail">
+      </a>
+    </div>
+  </footer>
+  
+  <div class="iletisimad">
+    <div class="mail">
+      <a href="mailto:efw54social@gmail.com">
+        <img class="resim" src="https://cdn-icons-png.flaticon.com/512/732/732200.png" alt="Mail">
+      </a>
+      <h4>Efw54social@gmail.com</h4>
+    </div>
+
+    <div class="insta">
+      <a href="https://discord.gg/hXBtQdYc" target="_blank">
+        <img class="resim" src="https://cdn-icons-png.flaticon.com/512/2111/2111370.png" alt="Discord">
+      </a>
+      <h4 class="yazzz">Discord</h4>
+    </div>
+
+    <div class="discord">
+    <a href="https://www.instagram.com/efe.klyc54/" target="_blank">
+        <img class="resim" src="https://cdn-icons-png.flaticon.com/512/2111/2111463.png" alt="Instagram"> </a>
+        <h4 class="yazzz">İnstagram</h4>
+
+    </div>
+
+    <div class="youtub">
+<a href="https://www.youtube.com/@Efew54" target="_blank">
+        <img class="resim" src="https://cdn-icons-png.flaticon.com/128/15047/15047410.png" alt="Instagram"> </a>
+        <h4 class="yazzz">Youtube</h4>
+    </div>
+
+
+
+
+
+
+
+  </div>
+ 
+    
+    
+    
+    
+
+    
+  
+  
+ 
+    
+    
+
+
+ 
+
+
+
+
+</body>
+
+
+
+
+
+</html>
