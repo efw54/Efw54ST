@@ -14,6 +14,9 @@
     body {
       background-color: black;
       font-family: Arial, sans-serif;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
     }
 
     .navbar {
@@ -22,25 +25,24 @@
       display: flex;
       justify-content: space-between;
       align-items: center;
-      padding: 15px 40px;
+      padding: 1rem 2.5rem;
     }
 
     .navbar img {
-      width: 60px;
-      height: 60px;
+      width: 4rem;
+      height: 4rem;
     }
 
     .menu {
       display: flex;
-      gap: 40px;
-      margin-right: auto;
-      margin-left: 480px;
+      gap: 2.5rem;
+      margin: 0 auto;
     }
 
     .menu a {
       color: #ccc;
       text-decoration: none;
-      font-size: 20px;
+      font-size: 1.25rem;
       transition: color 0.3s ease, transform 0.3s ease;
     }
 

@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
-        * {
+       * {
       margin: 0;
       padding: 0;
       box-sizing: border-box;
@@ -14,6 +14,9 @@
     body {
       background-color: black;
       font-family: Arial, sans-serif;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
     }
 
     .navbar {
@@ -22,44 +25,33 @@
       display: flex;
       justify-content: space-between;
       align-items: center;
-      padding: 15px 40px;
+      padding: 1rem 2.5rem;
     }
 
     .navbar img {
-      width: 60px;
-      height: 60px;
+      width: 4rem;
+      height: 4rem;
     }
 
     .menu {
       display: flex;
-      gap: 40px;
-      margin-right: auto;
-      margin-left: 480px;
+      gap: 2.5rem;
+      margin: 0 auto;
     }
 
     .menu a {
       color: #ccc;
       text-decoration: none;
-      font-size: 20px;
+      font-size: 1.25rem;
       transition: color 0.3s ease, transform 0.3s ease;
     }
 
     .menu a:hover {
       color: white;
-      transform: scale(1.2);}
+      transform: scale(1.2);
+    }
 
-      .usn{
-        font-size: 200px;
-        position: absolute;
-        top: 60%;
-        left: 350px;
-        height: 70%;
-        width: 70%;
-        background-color: black;
-        color: red;
-        transition: top 1s ease;
-
-      }
+     
       footer {
       position: fixed;
       bottom: 0;
@@ -114,9 +106,7 @@
     </div>
   </div>
 
-<div class="usn">
-    <h4>ÜŞENDİMM</h4>
-</div>
+
 <script>
     window.onload = function () {
       document.querySelector('.usn').style.top = '35%';
