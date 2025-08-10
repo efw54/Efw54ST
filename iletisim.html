@@ -260,6 +260,7 @@
      left: 90px;
 
     }
+    
 
    </style>
 
@@ -268,13 +269,15 @@
 <body>
 
 <div class="divv">
-   <input  class="arka " type="text" placeholder="Kullanıcı Adı veya İsim" > <br> <br>
-   <input class="arka" type="email" placeholder="E-Mail Adresi"> <br> <br>
-   <textarea class="arka" rows="5" cols="30" placeholder="Mesajınız"></textarea> 
-   <input class="sub" type="submit">
-  
+   <input id="isim" class="arka" type="text" placeholder="Kullanıcı Adı veya İsim"> <br><br>
+   <input id="email" class="arka" type="email" placeholder="E-Mail Adresi"> <br><br>
+   <textarea id="mesaj" class="arka" rows="5" cols="30" placeholder="Mesajınız"></textarea> 
+   <br><br>
+   <input id="gonderBtn" class="sub" type="submit" value="Gönder" onclick="formKontrol()">
+   
+   <!-- Uyarı Mesajı -->
+   <div id="uyari" style="margin-top:15px; text-align:center; font-weight:bold; font-size:18px;"></div>
 </div>
-
 
 
    <div class="navbar">
@@ -343,7 +346,28 @@
 
   </div>
 
+<script>
+function formKontrol() {
+    let isim = document.getElementById("isim").value.trim();
+    let email = document.getElementById("email").value.trim();
+    let mesaj = document.getElementById("mesaj").value.trim();
+    let uyari = document.getElementById("uyari");
+
+    if (isim === "" || email === "" || mesaj === "") {
+        uyari.innerHTML = "⚠️ Lütfen tüm alanları doldurunuz!";
+        uyari.style.color = "red";
+    } else {
+        uyari.innerHTML = "✅ Başarıyla gönderildi!";
+        uyari.style.color = "lime";
+    }
+    if ( email !== "@") {
+        uyari.innerHTML = "@ işareti koymayı unutmayın!!!";
+        uyari.style.color = "red";}
+}
+</script>
   
+
+
  
 
 </body>
